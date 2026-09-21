@@ -1,0 +1,51 @@
+# Word documents (all subdirectories)
+*.[dD][oO][cC][xX]
+
+# Dataset directories
+[dD]ata/
+[dD]ataset/
+[dD]atasets/
+
+# Common dataset formats
+*.[cC][sS][vV]
+*.[tT][sS][vV]
+*.sas7bdat
+*.sas7bndx
+*.xpt
+*.dta
+*.sav
+*.por
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+*.hdf
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.rds
+*.RData
+*.rdata
+*.sqlite
+*.sqlite3
+
+# Existing dataset archives (keep code archives visible)
+/Fund-Manager-Performance/Data.rar
+/Lottery-Factors/ff3monthly1960_2005.rar
+/Lottery-Factors/ff3daily1960_2005.rar
+/Lottery-Factors/crspmonthly.rar
+/Lottery-Factors/ccmxpf_linktable.rar
+/Lottery-Factors/crspdaily.rar
+/Lottery-Factors/funda1959_2005.rar
+/Volatility-Factors/data.rar
+/Momentum-Factors/originaldailydata.rar
+/Liquidity-Factors/data.rar
+/Attention-Factors/svi.zip
+/Attention-Factors/Google.zip
+/Attention-Factors/Robinhood.rar
+/Factors-Model/data.zip
+/Factors-Model/data.rar
+/Factors-Model/dataset.rar
+/Factors-Model/dataset.zip
