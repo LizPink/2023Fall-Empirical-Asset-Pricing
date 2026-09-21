@@ -241,11 +241,7 @@ R^{H-L}_{t+1} = \alpha +\beta_M(R_{M,t+1}-R_{f,t+1}) +\beta_S SMB_{t+1} +\beta_H
 $$
 论文发现，市值加权组合的月度 \(\alpha\) 约为−1.18%，而且显著为负。这说明，高MAX股票较低的后续收益，不能被这四个因子充分解释。由于高 MAX 股票通常规模较小、价格较低、流动性较差，也具有较高的特质波动率，为了排除这些已知因素的影响，作者使用双重排序和 Fama–MacBeth横截面回归，在控制其他特征后，继续检验MAX是否能够预测收益。
 $$
-R_{i,t+1}
-=
-a_t+b_tMAX_{i,t}
-+\boldsymbol{\gamma}_t^{\prime}\mathbf X_{i,t}
-+\varepsilon_{i,t+1}
+R_{i,t+1}=a_t+b_tMAX_{i,t}+\boldsymbol{\gamma}_t^{\prime}\mathbf X_{i,t}+\varepsilon_{i,t+1}
 $$
 其中，\(\mathbf X_{i,t}\) 包括市场 Beta、规模、账面市值比、动量、短期反转和流动性等控制变量。作者每个月估计一次横截面回归，再对 MAX 的系数取时间平均，研究发现，\(\bar b\) 显著为负，说明这些特征不能充分解释MAX与后续收益之间的负向关系。即使将MAX扩展为一个月内最高的 \(N\) 个日收益率的平均值，主要结论仍然成立。
 $$
