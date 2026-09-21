@@ -238,14 +238,7 @@ $$
 接下来，作者检验这种收益差异能否被已有因子解释。具体而言，将高 MAX 减去低 MAX 的组合收益对市场、规模、价值和动量四个因子进行回归：
 
 $$
-R^{H-L}_{t+1}
-=
-\alpha
-+\beta_M\left(R_{M,t+1}-R_{f,t+1}\right)
-+\beta_S SMB_{t+1}
-+\beta_H HML_{t+1}
-+\beta_U UMD_{t+1}
-+\varepsilon_{t+1}
+R^{H-L}_{t+1}=\alpha+\beta_M\left(R_{M,t+1}-R_{f,t+1}\right)+\beta_S SMB_{t+1}+\beta_H HML_{t+1}+\beta_U UMD_{t+1}+\varepsilon_{t+1}
 $$
 
 论文发现，市值加权组合的月度 \(\alpha\) 约为 −1.18%，而且显著为负。这说明，高 MAX 股票较低的后续收益，不能被这四个因子充分解释。
@@ -253,12 +246,7 @@ $$
 由于高 MAX 股票通常规模较小、价格较低、流动性较差，也具有较高的特质波动率，为了排除这些已知因素的影响，作者使用双重排序和 Fama–MacBeth 横截面回归，在控制其他特征后，继续检验 MAX 是否能够预测收益。
 
 $$
-R_{i,t+1}
-=
-a_t
-+b_t MAX_{i,t}
-+\boldsymbol{\gamma}_t^{\prime}\mathbf{X}_{i,t}
-+\varepsilon_{i,t+1}
+R_{i,t+1}=a_t+b_t MAX_{i,t}+\boldsymbol{\gamma}_t^{\prime}\mathbf{X}_{i,t}+\varepsilon_{i,t+1}
 $$
 
 其中，\(\mathbf{X}_{i,t}\) 包括市场 Beta、规模、账面市值比、动量、短期反转和流动性等控制变量。作者每个月估计一次横截面回归，再对 MAX 的系数取时间平均，研究发现，\(\bar b\) 显著为负，说明这些特征不能充分解释 MAX 与后续收益之间的负向关系。
@@ -266,9 +254,7 @@ $$
 即使将 MAX 扩展为一个月内最高的 \(N\) 个日收益率的平均值，主要结论仍然成立：
 
 $$
-\bar b
-=
-\frac{1}{T}\sum_{t=1}^{T} b_t
+\bar b=\frac{1}{T}\sum_{t=1}^{T} b_t
 $$
 
 这篇论文与之前 Volatility 内容最重要的联系，是对特质波动率之谜的解释。此前的研究发现，高 IVOL 股票的后续平均收益较低，然而这其实是反直觉的，因为如果投资者承担更多特质风险，通常应该要求更高回报。
@@ -276,13 +262,7 @@ $$
 而 Lottery 的解释是：这些股票收益低，可能是因为它们同时具有很强的彩票属性，投资者真正追捧的是其中的暴涨机会。为了检验这个结论，作者进行了如下回归：
 
 $$
-R_{i,t+1}
-=
-a_t
-+b_t MAX_{i,t}
-+c_t IVOL_{i,t}
-+\boldsymbol{\gamma}_t^{\prime}\mathbf{X}_{i,t}
-+\varepsilon_{i,t+1}
+R_{i,t+1}=a_t+b_t MAX_{i,t}+c_t IVOL_{i,t}+\boldsymbol{\gamma}_t^{\prime}\mathbf{X}_{i,t}+\varepsilon_{i,t+1}
 $$
 
 作者发现，加入 MAX 后，个股横截面回归中 IVOL 与未来收益的关系由负转正，而且正向关系显著。作者据此认为，原先观察到的高IVOL股票低收益，可能与其较高的MAX有关：投资者愿意为暴涨机会支付较高价格，使这些股票的平均回报下降。
